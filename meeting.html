@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="form.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" 
+rel="stylesheet" 
+/>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <!-- Contact Form Section-->
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="c5a0d554-4f31-4987-82bb-1becb7c363f8">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="text" name="Phone number" placeholder="Phone number" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="images/arrow_icon.png" alt=""></button>
+            <li class="contact-left-title">
+            <a href="index.html" class="button">Back</a></li>
+
+        </form>
+        
+    </div> 
+
+    <script src="app.js"></script>
+</body>
+</html>

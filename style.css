@@ -90,7 +90,7 @@
     transition: all 0.3s ease;
 }
 .navbar__links:hover{ /* when hovering over button it will turn red*/
-    color:#f77062;
+    color:#4837ff;
     transition: all 0.3s ease;
 }
 
@@ -182,10 +182,17 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+@media screen and (max-width: 768px) {
+    #ranking-button {
+        width: 200px;
+    }
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Hero Section CSS */
 .main{
-    background-color: #D2B48C;
+    background-color: #D2B48C;;
 }
 
 .main__container{
@@ -234,7 +241,7 @@
 
 .main__btn{
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100% );
+    background-color: #DAA520;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -249,7 +256,7 @@
 .main__btn a{
     position: relative;
     z-index: 2;
-    color:#fff;
+    color:#131313;
     text-decoration: none;
 }
 
@@ -275,6 +282,8 @@
 
 .main__img--container{
     text-align: center;
+    width:400px;
+    height:auto;
 }
 
 #main__img{
@@ -313,6 +322,9 @@
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+    
+        
+    
 }
 
 @media screen and (max-width:480px){
@@ -334,6 +346,10 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
+    .services__div{
+       
+     }
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Services section CSS*/
@@ -343,11 +359,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    padding: 20px;
+   /* height: 4vh;*/
     
 }
-.services h1{/* color scheme for NEXT GENERATION*/
+.services h1{/* color scheme for Why Choose Us*/
     font-size: 4rem;
+   
     background-color: #fff;
     background-image: linear-gradient(to top,#fff 0%,#fff
     100% );
@@ -358,25 +376,35 @@
     -moz-text-fill-color: transparent;
 }
 
-.services__card{
-    color:#fff;
-  
+.services__paragraph{
+    margin-bottom: 20px;
 }
+
+
 .services__container{
+    color:#fff;
+    font-size: 1.5rem;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    display: flex;
     z-index: 10;
 }
 .services__btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 45px;
-    width: 50%;
-    color:#fff;
-    margin-left: 34px;
+ 
+  height:80px;
+  width:250px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+   
     
+}
+.services__div{
+    display: flex;
+    background-color: #8B4513;
+    justify-content: center;
+    padding: 4px;
+
 }
 
 
@@ -384,7 +412,7 @@
 /* Footer CSS */
 
 .footer__container{
-    background-color: #ffe4c4;
+    background-color: #D2B48C;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
